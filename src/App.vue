@@ -2,7 +2,8 @@
   <v-app>
     <Header />
     <Hero />
-    <Hotbook />
+    <BookShelf />
+    <Footer />
     
   </v-app>
 </template>
@@ -11,8 +12,9 @@
 
 import Hero from "./components/Hero.vue";
 import Header from "./components/Header.vue";
-// import Product from "./components/Product.vue";
-import Hotbook from "./components/Hotbook.vue";
+import BookShelf from "./components/BookShelf.vue";
+import Footer from "./components/Footer.vue";
+// import Hotbook from "./components/Hotbook.vue";
 
 
 export default {
@@ -20,8 +22,9 @@ export default {
   components: {
     Header,
     Hero,
-    // Product,
-    Hotbook
+    BookShelf,
+    Footer
+    // Hotbook
   },
 
 }

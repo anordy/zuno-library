@@ -9,8 +9,8 @@
                         class="white--text mr-10" rounded>View Categories</v-btn>
                 </v-col>
 
-                <v-col class="rafiki-img" lg="6" style="overflow-x: hidden;">
-                    <img alt="Home image" src="../assets/rafiki.png">
+                <v-col lg="6" style="overflow-x: hidden;">
+                    <v-img alt="Home image" max-height="100%" max-width="100%" contain src="rafiki.png"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -32,7 +32,7 @@ export default {
 #hero {
     background-color: #EAE6D7;
     padding-left: 130px;
-    padding-right: 130px;
+    padding-right: 110px;
 }
 
 .side-home {
@@ -50,10 +50,6 @@ p.intro-text {
     font-family: 'Gill Sans';
     color: #1C3F3A;
 }
-.rafiki-img img {
-    /* background-color: red; */
-   max-width: 100%;
-   max-height: 100%;
-}
+
 
 </style>

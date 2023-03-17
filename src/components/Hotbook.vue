@@ -1,10 +1,11 @@
 <template>
     <div id="hotbook">
         <v-container  fluid>
-            <v-row>
+            <!-- <v-row>
                <img src="../assets/hotlogo.png"  alt="Hot books">
                <h4 class="ml-2">Hot Reads</h4>
-            </v-row>
+            </v-row> -->
+            <CarouselComponent/>
         </v-container>
     </div>
 </template>
@@ -12,8 +13,15 @@
 
 <script>
 /* eslint-disable vue/multi-word-component-names */
+import CarouselComponent from './CarouselComponent.vue';
+// import Card from './model/Card.vue';
+
 export default {
-    name: 'Hotbook'
+    name: 'Hotbook',
+    components: {
+        // Card,
+        CarouselComponent
+    }
 }
 
 
@@ -23,7 +31,7 @@ export default {
 <style scoped>
 #hotbook {
     background-color: lightblue;
-    margin-top: -200px;
+    /* margin-top: -200px; */
     padding-left: 130px;
     padding-right: 130px;
     height: 80vh;
