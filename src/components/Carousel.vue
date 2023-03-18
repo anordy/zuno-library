@@ -61,7 +61,7 @@ export default {
 
 <style scoped>
 #carousel {
-  margin-top: -220px;
+  margin-top: -230px;
   padding-left: 50px;
   /* background-color: green; */
 }

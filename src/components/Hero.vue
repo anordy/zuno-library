@@ -34,7 +34,7 @@ export default {
     background-color: #EAE6D7;
     padding-left: 130px;
     padding-right: 40px;
-    height: 90vh;
+    height: 83vh;
 }
 
 .side-home {
@@ -44,7 +44,7 @@ export default {
 }
 .right-side {
     /* background-color: red; */
-    height: 550px;
+    height: 540px;
 }
 p.intro-text {
     font-size: 45px;
