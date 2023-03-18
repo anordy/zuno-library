@@ -47,7 +47,7 @@ export default {
     height: 540px;
 }
 p.intro-text {
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 30px;
     margin-top: 70px;
     line-height: 1;
