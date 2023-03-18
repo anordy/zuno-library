@@ -3,7 +3,7 @@
         <v-container class="ma-0 pa-0" style="padding-top: 0px;" fluid>
             <v-row>
                 <v-col lg="6" class="side-home">
-                    <p class="intro-text">Get your <strong> favourite books </strong> all in <strong>one place</strong></p>
+                    <p class="intro-text">Get your <strong> favourite <br> books </strong> all in <strong>one place</strong></p>
                 
                     <v-btn style="background-color: #1C3F3A;color: #ffffff;text-transform: capitalize"
                         class="white--text" rounded>View Categories</v-btn>
