@@ -1,6 +1,6 @@
 <template>
   <div id="category">
-    <v-container>
+    <v-container fluid>
       <v-row>
         <v-col cols="12">
           <v-card style="background-color: #FBFBFB;border-color: #98A3A1;" height="70px" :elevation="0"
@@ -83,7 +83,7 @@ export default {
       { img: "../assets/book.png", title: "On Noam Chomsky; critical essays.", author: "Wadey, Maggie", rate: "3.5" },
       { img: "../assets/book.png", title: "Our Native American legacy : Northwest towns with Indian names / Sandy Nestor.", author: "Froeschner, Richard C.", rate: "4.5" },
     ],
-    items: ['Categories', 'Colorado', 'Florida', 'Georgia']
+    items: ['Categories', 'Popular', 'My picks']
   }),
   methods: {
     decrement() {
@@ -99,10 +99,10 @@ export default {
 
 <style scoped>
 #category {
-  background-color: #ffffff;
+  /* background-color: red; */
   /* padding-top: 50px; */
-  padding-left: 100px;
-  padding-right: 90px;
+  padding-left: 100px; 
+   padding-right: 90px;
 }
 
 #category h4 {
@@ -115,7 +115,7 @@ export default {
 #category p {
   color: #000000;
   font-size: 15px;
-  font-family: 'Gill Sans';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .dropdown {
@@ -176,14 +176,16 @@ export default {
   padding: 2px;
   padding-top: 10px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 550;
+  text-transform: capitalize;
   color: #1E1E1E;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+;
   /* background-color: aqua; */
 }
 
 .card-subtitle {
   padding-left: 2px;
-
 }
 
 .card-icon {

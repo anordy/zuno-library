@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <Header />
-    <Hero />
+    <Navbar/>
+   <Hero />
     <Carousel/>
     <Category/>
-    <Footer />
+    <Footer /> 
     
   </v-app>
 </template>
@@ -12,16 +12,16 @@
 <script>
 
 import Hero from "./components/Hero.vue";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
 import Carousel from "./components/Carousel.vue";
 import Category from "./components/Category.vue";
+import Footer from "./components/Footer.vue";
 
 
 export default {
   name: 'App',
   components: {
-    Header,
+    Navbar,
     Hero,
     Carousel,
     Category,
@@ -32,12 +32,14 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
 }
+
+
 </style>
