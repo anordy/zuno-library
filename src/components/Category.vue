@@ -191,4 +191,5 @@ export default {
 .card-icon {
   color: #F8921C;
   font-size: 20px;
+  margin-bottom: 20px;
 }</style>
