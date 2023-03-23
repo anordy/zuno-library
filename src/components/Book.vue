@@ -1,7 +1,6 @@
 <template>
-  <div id="category">
-    <v-container fluid>
-      <v-row>
+      <section class="book" id="book">
+        <v-row class="search-bar">
         <v-col cols="12">
           <v-card style="background-color: #FBFBFB;border-color: #98A3A1;" height="70px" :elevation="0"
             variant="outlined">
@@ -15,7 +14,6 @@
 
                   </v-col>
                   <v-col cols="7">
-                    <!-- <v-divider vertical></v-divider> -->
                     <v-text-field :elevetion="0" label="Find the Book you like..." variant="plain"></v-text-field>
 
                   </v-col>
@@ -32,15 +30,16 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row class="ml-1 mb-3">
+        <v-row class="ml-1 mb-3">
         <v-img src="book-shelf.png" class="mt-2" max-height="25" max-width="25" alt="Book Shelf"></v-img>
         <h4 class="ml-2">Book
           Shelf</h4>
       </v-row>
-      <v-col class="grid-container">
-        <v-card v-for="(book, i) in books" :key='i' class="grid-item" flat>
+        <div class="book-container">
+
+          <v-card v-for="(book, i) in books" :key='i' class="grid-item" flat>
           <div class="img-container">
-            <v-img class="book-img" src="rect.png" alt="book" max-height="260" max-width="170" contain></v-img>
+            <v-img class="book-img" src="rect.png" alt="book" contain></v-img>
             <v-icon class="book-mark" size="x-small">mdi-bookmark</v-icon>
           </div>
           <v-card-title class="card-title">{{ book.title }}</v-card-title>
@@ -50,9 +49,8 @@
             <p class="ml-2">{{ book.rate }}</p>
           </v-card-actions>
         </v-card>
-      </v-col>
-    </v-container>
-  </div>
+      </div>
+    </section>
 </template>
 
 <script>
@@ -98,49 +96,38 @@ export default {
 </script>
 
 <style scoped>
-#category {
+
+#book {
+    /* background: greenyellow; */
+}
+.search-bar {
   /* background-color: red; */
-  /* padding-top: 50px; */
-  padding-left: 100px; 
-   padding-right: 90px;
+  margin-top: -100px;
 }
-
-#category h4 {
-  color: #1E1E1E;
-  font-size: 28px;
-  font-family: 'Gill Sans';
-  font-weight: 300
-}
-
-#category p {
+#book p {
   color: #000000;
   font-size: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.dropdown {
-  display: flex;
-  align-items: center;
-  /* background-color: green; */
-}
-
-.searchButton {
-  background-color: #1C3F3A;
-  color: #ffffff;
-  text-transform: capitalize;
-  padding-left: 30px;
-  padding-right: 30px;
+/* .book h2 {
+    margin-bottom: 4rem;
+} */
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* background-color: aquamarine; */
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .img-container {
-  position: relative;
-}
+  /* background-color: green; */
 
-.book-img {
-  display: block;
-  position: relative;
 }
-
+/* .img-container .book-img {
+  height: ;
+  width: ;
+} */
 .book-mark {
   position: absolute;
   top: 0;
@@ -153,23 +140,15 @@ export default {
   /* background-color: red; */
 }
 
-.grid-container {
-  display: grid;
-  gap: 20px 20px;
-  grid-template-columns: auto auto auto auto auto;
-  /* background-color: #2196F3; */
-  padding: 10px;
-}
-
 .grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
   /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  padding: 0px;
+  /* padding: 0px;
   font-size: 30px;
   text-align: left;
   height: 350px;
   background-color: transparent;
-  width: 170px;
+  width: 170px; */
 }
 
 .card-title {
@@ -192,4 +171,37 @@ export default {
   color: #F8921C;
   font-size: 20px;
   margin-bottom: 20px;
-}</style>
+}
+
+
+@media (max-width: 768px) {
+    .book {
+     margin-bottom: 3rem;   
+    }
+    .book-container {
+     grid-template-columns: repeat(3, 1fr);
+    } 
+    .img-container {
+      /* background-color: red; */
+    }
+}
+
+@media (max-width: 617px) {
+    .book-container {
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .book-container {
+        grid-template-columns: repeat(1,1fr);
+    } 
+   
+}
+
+
+
+</style>

@@ -2,7 +2,7 @@
   <v-footer id="footer" padless>
     <v-container>
       <v-row>
-        <v-img src="footer.png" max-height="120" max-width="150" contain alt="footer image"></v-img>
+        <v-img class="img-footer" src="footer.png" max-height="120" max-width="150" contain alt="footer image"></v-img>
         <v-spacer></v-spacer>
         <p style="color: #ffffff;font-size: 13px;     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    padding-top: 15px;">All right

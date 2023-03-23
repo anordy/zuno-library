@@ -1,7 +1,7 @@
 
 <template>
   <div id="carousel">
-    <v-row class="mb-1"  style="margin-left: 90px;">
+    <v-row class="mb-1"  style="margin-left: 90px; margin-top: 20px;">
       <v-img src="hotlogo.png" class="mt-2" max-height="25" max-width="25" alt="Book Shelf"></v-img>
       <h4 class="ml-2 mt-1">Hot Reads
       </h4>
@@ -68,7 +68,7 @@ export default {
 
 #carousel h4 {
   color: #1E1E1E;
-  font-size: 25px;
+  font-size: 1.3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-weight: 300;
    /* padding-top: 30px; */
